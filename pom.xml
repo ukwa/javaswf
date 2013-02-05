@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.anotherbigidea</groupId>
+	<artifactId>javaswf</artifactId>
+	<version>CVS-SNAPSHOT-1</version>
+	<packaging>jar</packaging>
+        <name>JavaSWF</name>
+        <description>JavaSWF2 is a set of Java packages that enable the parsing, manipulation and generation of the Macromedia Flash(TM) file format known as SWF ("swiff").</description>
+        <url>http://www.anotherbigidea.com/javaswf/</url>
+        <inceptionYear>2001</inceptionYear>
+<licenses>
+    <license>
+      <name>The JavaSWF2-BSD License</name>
+      <url>http://www.anotherbigidea.com/javaswf/JavaSWF2-BSD.LICENSE.html</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+<scm>
+    <url>http://sourceforge.net/projects/javaswf/develop</url>
+    <connection>scm:cvs:pserver:anonymous@javaswf.cvs.sourceforge.net:/cvsroot/javaswf</connection>
+  </scm>
+<developers>
+    <developer>
+      <id>nickmain</id>
+      <name>Nick Main</name>
+      <email>nickmain@users.sourceforge.net</email>
+    </developer>
+  </developers>
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+<build>
+        <plugins>
+<plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          <source>1.4</source>
+          <target>1.4</target>
+        </configuration>
+      </plugin>
+<plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-javadoc-plugin</artifactId>
+        <version>2.9</version>
+        <configuration>
+          <source>1.4</source>
+        </configuration>
+      </plugin>
+<plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-gpg-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>sign-artifacts</id>
+            <phase>verify</phase>
+            <goals>
+              <goal>sign</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+</plugins>
+</build>
+</project>
